@@ -1,0 +1,25 @@
+{
+  "name": "simple-js-validator",
+  "version": "1.0.0",
+  "description": "a simple js validator used to validate object and return errors",
+  "main": "Collection.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha ./test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiHuang1986/simple-js-validator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiHuang1986/simple-js-validator/issues"
+  },
+  "homepage": "https://github.com/DiHuang1986/simple-js-validator#readme",
+  "dependencies": {
+    "lodash": "^4.17.10"
+  },
+  "devDependencies": {
+    "mocha": "^5.1.1"
+  }
+}

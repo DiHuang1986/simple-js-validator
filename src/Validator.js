@@ -1,10 +1,12 @@
+const Collection = require('./Collection')
+
 class Validator {
   constructor (target, TranslateService) {
     this._errors = new Collection()
     this._data = target
 
     this._translate = {
-      _translate (value) {
+      translate (value) {
         return value
       },
     }
@@ -51,7 +53,7 @@ class Validator {
 
     // not numeric, return
     if (!this._isNumeric(value)) {
-      return this.isNumeric(value, name)
+      return this.isNumeric(name)
     }
 
     let parsedMinValue = parseFloat(minValue)
@@ -79,7 +81,7 @@ class Validator {
 
     // not numeric, return
     if (!this._isNumeric(value)) {
-      return this.isNumeric(value, name)
+      return this.isNumeric(name)
     }
 
     let parsedMaxValue = parseFloat(maxValue)

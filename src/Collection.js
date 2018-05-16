@@ -1,3 +1,5 @@
+const _ = require('lodash')
+
 class Collection {
   constructor () {
     this._data = []
